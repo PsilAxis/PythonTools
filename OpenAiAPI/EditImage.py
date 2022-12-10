@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-I = str(input('Please input Image Name: '))
-m = str(input('Please input Image Name: '))
+I = str(input('Please input Image file: '))
+m = str(input('Please input Mask file: '))
 p = str(input('Please input a prompt: '))
 
 openai.organization = "org-gv3yWWCUbdcDMU1vO1mDzxnW"
