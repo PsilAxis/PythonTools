@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 I = str(input('Please input Image Name: '))
-M = str(input('Please input Image Name: '))
+m = str(input('Please input Image Name: '))
 p = str(input('Please input a prompt: '))
 
 openai.organization = "org-gv3yWWCUbdcDMU1vO1mDzxnW"
@@ -14,7 +14,7 @@ openai.Model.list()
 
 model = openai.Image.create_edit(
     image = open('temp/' + I, 'rb'),
-    mask = open('temp/' + M, 'rb'),
+    mask = open('temp/' + m, 'rb'),
     prompt=p,
     n = 1,
     size = '512x512',
